@@ -54,6 +54,7 @@ pub struct Preferences {
     pub max_ratio_enabled: Option<bool>,
     pub max_ratio: Option<f64>,
     pub max_ratio_act: Option<MaxRatioAct>,
+    pub announce_port: Option<i64>,
     pub listen_port: Option<i64>,
     pub upnp: Option<bool>,
     pub random_port: Option<bool>,
