@@ -82,7 +82,7 @@ pub struct Preferences {
     pub lsd: Option<bool>,
     pub encryption: Option<Encryption>,
     pub anonymous_mode: Option<bool>,
-    pub proxy_type: Option<ProxyType>,
+    pub proxy_type: Option<String>,
     pub proxy_ip: Option<String>,
     pub proxy_port: Option<i64>,
     pub proxy_peer_connections: Option<bool>,
