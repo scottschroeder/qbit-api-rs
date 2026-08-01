@@ -26,7 +26,7 @@ impl Endpoint for Login {
     }
     fn check_status(&self, status: reqwest::StatusCode) -> Option<ClientError> {
         match status {
-            StatusCode::OK => None,
+            StatusCode::OK | StatusCode::NO_CONTENT => None,
             StatusCode::FORBIDDEN => Some(ClientError::Authentication),
             _ => Some(ClientError::Unknown),
         }
